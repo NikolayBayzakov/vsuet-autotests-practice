@@ -16,6 +16,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 # Структура проекта 
+```
 project/
 ├── artifacts/screenshots/   # Скриншоты падений тестов + Логи (не коммитится)
 ├── certificates/            # Сертификаты для аутентификации (не коммитится)
@@ -28,6 +29,7 @@ project/
 ├── logging_config.py       # Настройка системы логирования
 ├── README.md               # Документация проекта
 └── requirements.txt        # Зависимости Python
+```
 
 # Запуск smoke-тестов
 pytest tests/test_smoke.py
