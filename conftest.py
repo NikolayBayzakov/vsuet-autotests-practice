@@ -11,7 +11,7 @@ from datetime import datetime
 from pathlib import Path
 
 load_dotenv()
-BASE_URL = os.getenv("BASE_URL", "https://demo.u-system.tech")
+BASE_URL = os.getenv("BASE_URL")
 LOGIN = os.getenv("LOGIN")
 PASSWORD = os.getenv("PASSWORD")
 CERT_PFX_PATH = os.getenv("CERT_PFX_PATH")
@@ -123,5 +123,6 @@ def screenshot_on_failure(request, page):
         # Делаем скриншот
         page.screenshot(path=path, full_page=True)
         print(f"📸 Скриншот при падении: {path}")
+
 
 
