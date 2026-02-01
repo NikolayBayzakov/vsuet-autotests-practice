@@ -17,17 +17,17 @@ pip install -r requirements.txt
 
 # Структура проекта 
 project/
-├── 📂 artifacts/screenshots/ # Скриншоты падений тестов + Логи (не коммитится)
-├── 📂 certificates/ # Cертификаты для аутентификации (не коммитится)
-├── 📂 tests/
-│ └── test_smoke.py # Основные smoke-тесты
-├── 📂 venv/ # Виртуальное окружение Python (не коммитится)
-├── 📜 .env # Переменные окружения (не коммитится)
-├── 📜 .gitignore # Игнорируемые файлы Git
-├── 📜 conftest.py # Фикстуры и конфигурация pytest
-├── 📜 logging_config.py # Настройка системы логирования
-├── 📜 README.md # Документация проекта
-└── 📜 requirements.txt # Зависимости Python
+├── artifacts/screenshots/   # Скриншоты падений тестов + Логи (не коммитится)
+├── certificates/            # Сертификаты для аутентификации (не коммитится)
+├── tests/
+│   └── test_smoke.py       # Основные smoke-тесты
+├── venv/                   # Виртуальное окружение Python (не коммитится)
+├── .env                    # Переменные окружения (не коммитится)
+├── .gitignore              # Игнорируемые файлы Git
+├── conftest.py             # Фикстуры и конфигурация pytest
+├── logging_config.py       # Настройка системы логирования
+├── README.md               # Документация проекта
+└── requirements.txt        # Зависимости Python
 
 # Запуск smoke-тестов
 pytest tests/test_smoke.py
